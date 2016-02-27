@@ -42,6 +42,19 @@ Please note that the use of the `dd` tool can overwrite any partition of your ma
 
 - Remove the SD card from the card reader.
 
+After installing Raspbian on my 16gb sd card and booting you will see that there is not much space free.
+This happens because the Raspbian image is 4gb. Increasing the space is easy.
+Initially after installing Raspbian.
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root       3.7G  3.4G  106M  98% /
+
+If your SD card is larger and you would like to resize it. Simply run sudo raspi-config and select option 1.
+Once complete, reboot.
+My 16gb card now shows... 
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        15G  3.4G   11G  25% /
+
+
 ---
 
 *This article uses content from the eLinux wiki page [RPi_Easy_SD_Card_Setup](http://elinux.org/RPi_Easy_SD_Card_Setup), which is shared under the [Creative Commons Attribution-ShareAlike 3.0 Unported license](http://creativecommons.org/licenses/by-sa/3.0/)*
